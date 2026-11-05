@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bt-bg: #F4F0E8;
+    --bt-text: #242424;
+    --bt-brick: #A64B36;
+    --bt-concrete: #A8A39B;
+    --bt-beige: #D8C8B2;
+    --bt-charcoal: #1A1A1A;
+  }
+
+  body {
+    background-color: var(--bt-bg);
+    color: var(--bt-text);
+    user-select: none;
+    -webkit-user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  input, textarea, select {
+    user-select: auto;
+    -webkit-user-select: auto;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(168, 163, 155, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A8A39B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #78736B;
+}
+
+/* Industrial mesh subtle pattern */
+.bg-mesh-pattern {
+  background-image: radial-gradient(rgba(36, 36, 36, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Thermal receipt preview font */
+.font-receipt {
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+

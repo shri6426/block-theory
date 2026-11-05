@@ -1,0 +1,45 @@
+{
+  "appId": "com.blocktheory.pos",
+  "productName": "BLOCK THEORY POS",
+  "copyright": "Copyright © 2026 BLOCK THEORY",
+  "directories": {
+    "output": "release"
+  },
+  "npmRebuild": false,
+  "nodeGypRebuild": false,
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "package.json"
+  ],
+  "asar": true,
+  "asarUnpack": [
+    "**/node_modules/better-sqlite3/**"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "BLOCK THEORY POS",
+    "deleteAppDataOnUninstall": false,
+    "runAfterFinish": true
+  },
+  "portable": {
+    "artifactName": "BlockTheoryPOS-Portable-${version}.exe"
+  }
+}
