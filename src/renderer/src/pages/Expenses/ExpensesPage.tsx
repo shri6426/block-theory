@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  ReceiptText, 
-  Plus, 
-  Trash2, 
-  Calendar, 
-  DollarSign, 
-  RefreshCw, 
+import {
+  ReceiptText,
+  Plus,
+  Trash2,
+  Calendar,
+  DollarSign,
+  RefreshCw,
   X,
   CreditCard,
   Banknote,

@@ -23,3 +23,10 @@ backups/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+
+release/*.zip
+release/*.exe
+release/*.blockmap
+release/builder-debug.yml
+release/win-unpacked/
